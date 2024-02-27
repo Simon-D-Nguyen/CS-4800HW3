@@ -9,7 +9,7 @@ abstract class Employee {
 + getFirstName(): String
 + setFirstName(in firstName: String): void
 + getLastName(): String
-+ setLastName(in firstName: String): void
++ setLastName(in lastName: String): void
 + getSocialSecurityNumber(): String
 + setSocialSecurityNumber(in socialSecurityNumber: String): void
 + toString(): String
