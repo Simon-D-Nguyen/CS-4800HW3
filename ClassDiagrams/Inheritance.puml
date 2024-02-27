@@ -20,6 +20,7 @@ class SalariedEmployee {
 
 + getWeeklySalary(): int
 + setWeeklySalary(in weeklySalary: int): void
++ toString(): String
 }
 
 
@@ -31,6 +32,7 @@ class HourlyEmployee{
 + setWage(in wage: int): void
 + getHoursWorked(): int
 + setHoursWorked(in hoursWorked: int): void
++ toString(): String
 }
 
 class CommissionEmployee {
@@ -41,6 +43,7 @@ class CommissionEmployee {
 + setCommissionRate(in commissionRate: int): void
 + getGrossSales(): int
 + setGrossSales(in grossSales: int): void
++ toString(): String
 }
 
 class BaseEmployee {
@@ -48,6 +51,7 @@ class BaseEmployee {
 
 + getBaseSalary(): int
 + setBaseSalary(in baseSalary: int): int
++ toString(): String
 }
 
 
