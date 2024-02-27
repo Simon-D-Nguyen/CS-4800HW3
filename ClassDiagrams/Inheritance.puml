@@ -62,7 +62,13 @@ Employee <|-- BaseEmployee
 
 
 class Driver {
-+ {static} main(in args[*]: String): void
++ {static} main(in args: String[*]): void
 }
+
+SalariedEmployee <-- Driver : uses
+HourlyEmployee <-- Driver : uses
+CommissionEmployee <-- Driver : uses
+BaseEmployee <-- Driver : uses
+
 
 @enduml
