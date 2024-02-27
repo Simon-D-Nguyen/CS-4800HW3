@@ -53,5 +53,14 @@ public *-- htaccess
 public *-- htrouter
 public *-- index
 
+note as n1
+    Since none of the files/subfolders
+    are declared with variables, I left
+    the instance names blank.
+
+    A version with subfolders and files
+    with instance names is in the other branch
+    (or below this section in the printout).
+end note
 
 @enduml
