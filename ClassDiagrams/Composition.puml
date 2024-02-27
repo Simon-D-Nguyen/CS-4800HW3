@@ -28,7 +28,7 @@ class Folder {
 + printFolderContents(): void
 }
 
-Folder *-- File
+Folder *-- "*" File : "can have"
 
 class Driver {
 + {static} main(in args: String[*]): void

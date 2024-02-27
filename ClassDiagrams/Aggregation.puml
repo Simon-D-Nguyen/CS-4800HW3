@@ -47,8 +47,8 @@ class Course {
 + printCourse(): void
 }
 
-Course o-- Instructor
-Course o-- Textbook
+Course "1" o-- "*" Instructor : "could have"
+Course "1" o-- "*" Textbook : "could have"
 
 class Driver {
 + {static} main(in args: String[*]): void
