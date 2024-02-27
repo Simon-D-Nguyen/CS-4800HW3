@@ -36,6 +36,7 @@ class Course {
 ~ instructors: ArrayList<Instructor> =
 ~ textbooks: ArrayList<Textbook>
 
++ Course()
 + getName(): String
 + setName(in name: String): void
 + getInstructors() : ArrayList<Instructor>
