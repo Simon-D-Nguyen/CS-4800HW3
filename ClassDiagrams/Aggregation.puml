@@ -51,12 +51,9 @@ Course o-- Instructor
 Course o-- Textbook
 
 class Driver {
-+ {static} main(in args: String[]): void
++ {static} main(in args: String[*]): void
 }
 
-Instructor <--- Driver: uses
-Textbook <--- Driver: uses
-Course <--- Driver: uses
 
 
 @enduml

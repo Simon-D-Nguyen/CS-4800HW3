@@ -35,10 +35,8 @@ Ship <|-- CruiseShip
 
 
 class Driver {
-+ {static} main(in args: String[]): void
++ {static} main(in args: String[*]): void
 }
 
-CargoShip <-- Driver : uses
-CruiseShip <-- Driver: uses
 
 @enduml
