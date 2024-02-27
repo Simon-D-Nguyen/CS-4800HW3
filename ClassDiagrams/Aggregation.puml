@@ -33,7 +33,7 @@ class Textbook {
 
 class Course {
 ~ name: String
-~ instructors: ArrayList<Instructor> =
+~ instructors: ArrayList<Instructor>
 ~ textbooks: ArrayList<Textbook>
 
 + Course()
