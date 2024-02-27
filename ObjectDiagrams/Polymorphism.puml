@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+
+object "<u>ships[0]:Ship</u>" as ship0{
+name = "Titanic"
+yearBuilt = "March31st,1909"
+}
+
+
+object "<u>ships[1]:CruiseShip</u>" as cruise1 {
+maxNumberPassengers = 100
+}
+
+object "<u>ships[1]:Ship</u>" as ship1 {
+name = "MVGemini"
+yearBuilt = "May30th,1991"
+}
+
+ship1 <|-- cruise1
+
+object "<u>ships[2]:CargoShip</u>" as cargo2 {
+cargoCapacityInTonnage = 220940
+}
+object "<u>ships[2]:Ship</u>" as ship2 {
+name = "EverGiven"
+yearBuilt = "September25th,2018"
+}
+
+ship2 <|-- cargo2
+
+map "<u>ships:Ship[]</u>" as ships {
+0 *-> ship0
+1 *-> cruise1
+2 *-> cargo2
+}
+
+@enduml
