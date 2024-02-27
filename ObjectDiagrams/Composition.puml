@@ -4,19 +4,19 @@
 object "<u>phpDemo1:Folder</u>" as root {
 name = "php_demo1"
 }
-object "<u>:Folder</u>" as sourceFiles {
+object "<u>subFolder:Folder</u>" as sourceFiles {
 name = "Source Files"
 }
 
 root *-- sourceFiles
 
-object "<u>:Folder</u>" as includePath{
+object "<u>subFolder:Folder</u>" as includePath{
 name = "Include Path"
 }
 
 root *-- includePath
 
-object "<u>:Folder</u>" as remoteFiles {
+object "<u>subFolder:Folder</u>" as remoteFiles {
 name = "Remote Files"
 }
 
@@ -24,13 +24,13 @@ root *-- remoteFiles
 
 
 
-object "<u>:Folder</u>" as phalcon {
+object "<u>subFolder:Folder</u>" as phalcon {
 name = ".phalcon"
 }
-object "<u>:Folder</u>" as cache {
+object "<u>subFolder:Folder</u>" as cache {
 name = "cache"
 }
-object "<u>:Folder</u>" as public {
+object "<u>subFolder:Folder</u>" as public {
 name = "public"
 }
 
@@ -39,13 +39,13 @@ sourceFiles *--cache
 sourceFiles *-- public
 
 
-object "<u>:File</u>" as htaccess {
+object "<u>file:File</u>" as htaccess {
 name = ".htaccess"
 }
-object "<u>:File</u>" as htrouter {
+object "<u>file:File</u>" as htrouter {
 name = ".htrouter.php"
 }
-object "<u>:File</u>" as index {
+object "<u>file:File</u>" as index {
 name = "index.html"
 }
 
@@ -53,5 +53,14 @@ public *-- htaccess
 public *-- htrouter
 public *-- index
 
+note as n1
+    For this diagram, I used **subfolder** as the
+    instance name for subfolder instances and **file**
+    as the name for File instances since that is
+    how it is instantiated in the Folder class.
 
+    Otherwise, the folder and file instance names
+    for all other instances besides phpDemo1 would
+    be blank.
+end note
 @enduml
