@@ -16,7 +16,7 @@ abstract class Employee {
 }
 
 class SalariedEmployee {
-- weeklySalary: int
+~ weeklySalary: int
 
 + getWeeklySalary(): int
 + setWeeklySalary(in weeklySalary: int): void
@@ -25,8 +25,8 @@ class SalariedEmployee {
 
 
 class HourlyEmployee{
-- wage: int
-- hoursWorked: int
+~ wage: int
+~ hoursWorked: int
 
 + getWage(): int
 + setWage(in wage: int): void
@@ -36,8 +36,8 @@ class HourlyEmployee{
 }
 
 class CommissionEmployee {
-- commissionRate: int
-- grossSales: int
+~ commissionRate: int
+~ grossSales: int
 
 + getCommissionRate(): int
 + setCommissionRate(in commissionRate: int): void
@@ -47,7 +47,7 @@ class CommissionEmployee {
 }
 
 class BaseEmployee {
-- baseSalary: int
+~ baseSalary: int
 
 + getBaseSalary(): int
 + setBaseSalary(in baseSalary: int): int
